@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Nimbus Front Associates Cleaners</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: url('background1.jpg') no-repeat center center/cover; /* Background image */
+            color: white; /* Text color for better contrast */
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+        }
+
+        /* Navbar Custom Styles */
+        .navbar {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            border-bottom: 2px solid #40e0d0; /* Turquoise */
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar .navbar-brand img {
+            height: 50px; /* Adjust logo height */
+        }
+
+        .navbar .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .navbar .navbar-nav .nav-link:hover {
+            color: #40e0d0; /* Turquoise */
+            text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.6);
+            transform: scale(1.1);
+        }
+
+        .navbar .navbar-nav .nav-link i {
+            margin-right: 5px;
+        }
+
+        .navbar-toggler {
+            border: none;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: white;
+        }
+
+        .navbar-toggler-icon {
+            color: white;
+        }
+
+        /* About Us Section */
+        .about-us {
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .about-us h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            margin-bottom: 20px;
+        }
+
+        .about-us p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Team Section */
+        .team {
+            background: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 60px 20px;
+            color: black; /* Text color for better contrast */
+        }
+
+        .team h2 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .team .team-member {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .team .team-member img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            border: 4px solid #40e0d0; /* Turquoise border */
+        }
+
+        .team .team-member h3 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .team .team-member p {
+            font-size: 1rem;
+            color: #555; /* Darker text for better readability */
+        }
+
+        /* Footer Styles */
+        footer {
+            background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: #40e0d0; /* Turquoise */
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: #40e0d0; /* Turquoise */
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        footer a:hover {
+            color: white;
+            text-shadow: 0px 2px 4px rgba(255, 255, 255, 0.6);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>About Us</h1>
+    <p>Learn more about our mission, values, and the team behind Nimbus Front Associates Cleaners.</p>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <!-- Logo in Navbar -->
+            <a class="navbar-brand" href="#">
+                <img src="logo.png" alt="Nimbus Front Associates Cleaners Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about-us.html"><i class="fas fa-info-circle"></i> About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- About Us Section -->
+<div class="about-us">
+    <h2>Our Story</h2>
+    <p>
+        Nimbus Front Associates Cleaners was founded with a simple mission: to provide exceptional cleaning and pest control services that exceed our clients' expectations. 
+        With years of experience in the industry, we have built a reputation for reliability, professionalism, and attention to detail.
+    </p>
+    <p>
+        Our team is passionate about creating clean, safe, and healthy environments for our clients. Whether it's a residential space, a commercial office, or an industrial facility, 
+        we are committed to delivering top-notch results every time.
+    </p>
+</div>
+
+<!-- Team Section -->
+<div class="team">
+    <h2>Meet Our Team</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 team-member">
+                <img src="team1.jpg" alt="Team Member 1">
+                <h3>John Doe</h3>
+                <p>Founder & CEO</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="team2.jpg" alt="Team Member 2">
+                <h3>Jane Smith</h3>
+                <p>Operations Manager</p>
+            </div>
+            <div class="col-md-4 team-member">
+                <img src="team3.jpg" alt="Team Member 3">
+                <h3>Mike Johnson</h3>
+                <p>Lead Technician</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2025 Nimbus Front Associates Cleaners. All rights reserved.</p>
+    <p>
+        Follow us:
+        <a href="https://facebook.com"><i class="fab fa-facebook"></i> Facebook</a> |
+        <a href="https://twitter.com"><i class="fab fa-twitter"></i> Twitter</a> |
+        <a href="https://instagram.com"><i class="fab fa-instagram"></i> Instagram</a>
+    </p>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
